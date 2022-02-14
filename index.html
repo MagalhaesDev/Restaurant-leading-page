@@ -38,12 +38,21 @@
       .card-content > .card-deck > .card {
         border-radius: 30px;
       }
+      @media (max-width:420px){
+         .logo-name,.logo-name > span{
+           font-size: 25px;
+           letter-spacing: 0px;
+         }
+         .max-img{
+           width: 700px;
+         }
+      }
     </style>
 </head>
 <body>
    <div>
   <header>
-  <nav class="navbar navbar-expand-sm color-menu navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-xl color-menu navbar-dark fixed-top">
     <div class="navbar-brand logo-name text-warning">Caldeirão <span>Mineiro</span></div>
 
     <button class="navbar-toggler text-dark" type="Button" data-toggle="collapse" data-target="#myNav">
