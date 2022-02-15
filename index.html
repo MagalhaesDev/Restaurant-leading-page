@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caldeirão Mineiro</title>
+    <link rel="icon" type="imagem logo" href="./images/icons8-porridge-50.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,10 @@
         max-height: 550px;
       }
 
+      .h500{
+        height: 500px;
+      }
+
       .color-menu{
         background-color: rgba(0, 0, 0, 0.794);
       }
@@ -26,7 +31,7 @@
         font-size: 25px;
       }
       .logo-name > span {
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         font-size: 35px;
       }
       .about-caldeirao > p{
@@ -36,24 +41,29 @@
         padding: 30px;
       }
       .card-content > .card-deck > .card {
-        border-radius: 30px;
+        border-radius: 10px;
       }
       @media (max-width:420px){
          .logo-name,.logo-name > span{
            font-size: 25px;
            letter-spacing: 0px;
          }
-         .max-img{
-           width: 700px;
-         }
+         .h500{
+           height: 200px;
+         }     
          .about-caldeirao > h1{
            font-size: 30px;
+         }
+         .w800{
+           width: 800px;
+         }
+         #meuModal{
+           font-size: 13px;
          }
       }
     </style>
 </head>
 <body>
-   <div>
   <header>
   <nav class="navbar navbar-expand-xl color-menu navbar-dark fixed-top">
     <div class="navbar-brand logo-name text-warning">Caldeirão <span>Mineiro</span></div>
@@ -64,13 +74,13 @@
 
     <div id="myNav" class="collapse navbar-collapse justify-content-end">
     <ul class="navbar-nav">
-        <li class="nav-item mr-5 h5"><a href="#home" class="nav-link active " data-toggle="tab">Inicio</a></li>
-        <li class="nav-item mr-5 h5"><a href="#price" class="nav-link " data-toggle="tab">Sobre</a></li>
-        <li class="nav-item mr-5 h5"><a href="#about" class="nav-link " data-toggle="tab">Cardapios</a></li>
-        <li class="nav-item mr-5 h5"><a href="#about" class="nav-link " data-toggle="tab">Contato</a></li>
-        <li class="nav-item mr-5 h5"><a href="#about" class="nav-link " data-toggle="tab">Trabalhe Conosco</a></li>
+        <li class="nav-item mr-5"><a href="#mainSlider" class="nav-link">Inicio</a></li>
+        <li class="nav-item mr-5"><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li class="nav-item mr-5"><a href="#homing" class="nav-link">Cardapios</a></li>
+        <li class="nav-item mr-5"><a href="#about" class="nav-link">Contato</a></li>
+        <li class="nav-item mr-5"><a href="#about" class="nav-link">Trabalhe Conosco</a></li>
     </ul>
-</div>
+    </div>
 </nav>
 </header>
 <main>
@@ -82,16 +92,16 @@
         <li data-targe="#mainSlider" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/img-one.jfif" class="d-block max-img rounded" alt="Projeto restaurante">
+        <div class="carousel-item active ">
+          <img src="./images/img-one.jfif" class="d-block max-img rounded h500" alt="Projeto restaurante">
         </div>
 
         <div class="carousel-item">
-          <img src="./images/buda.jpg" class="d-block max-img rounded" alt="Projeto restaurante">
+          <img src="./images/buda.jpg" class="d-block max-img rounded h500" alt="Projeto restaurante">
         </div>
 
         <div class="carousel-item">
-          <img src="./images/food.jpg" class="d-block max-img rounded" alt="Projeto restaurante">
+          <img src="./images/food.jpg" class="d-block max-img rounded h500" alt="Projeto restaurante">
         </div>
         
       </div>
@@ -102,59 +112,143 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
-
-    <div class="bg-light text-black about-caldeirao">
-      <h1 class="container text-center p-4 display-4">Sobre o caldeirão Mineiro</h1>
-      <p class="container text-capitalize text-unstyled">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem eaque voluptatem dolore quam eum culpa consequuntur facilis repellat. Possimus ipsa at rem soluta excepturi natus voluptates ad commodi quam.
+    
+    <div id="sobre" class="bg-light text-black about-caldeirao container ">
+      <h2 class=" text-center p-4 display-4">Sobre o caldeirão Mineiro</h2>
+      <p class="text-jutify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem eaque voluptatem dolore quam eum culpa consequuntur facilis repellat. Possimus ipsa at rem soluta excepturi natus voluptates ad commodi quam.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ab magni voluptatum nesciunt dicta voluptates, nulla quis provident inventore iusto pariatur eligendi quasi expedita officiis cum, commodi possimus assumenda perspiciatis!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, doloremque. Magnam quasi nulla perferendis dolore quibusdam possimus distinctio iusto alias quidem quaerat aut, architecto illum sapiente necessitatibus, expedita est ex.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a porro alias animi. Hic sapiente, minus sequi sed, quibusdam voluptate, eveniet molestiae ducimus dolore numquam natus explicabo! Non, mollitia quas.
       </p>
-      <p class="container text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem eaque voluptatem dolore quam eum culpa consequuntur facilis repellat. Possimus ipsa at rem soluta excepturi natus voluptates ad commodi quam.
+      <p class="text-jutify ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem eaque voluptatem dolore quam eum culpa consequuntur facilis repellat. Possimus ipsa at rem soluta excepturi natus voluptates ad commodi quam.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ab magni voluptatum nesciunt dicta voluptates, nulla quis provident inventore iusto pariatur eligendi quasi expedita officiis cum, commodi possimus assumenda perspiciatis!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, doloremque. Magnam quasi nulla perferendis dolore quibusdam possimus distinctio iusto alias quidem quaerat aut, architecto illum sapiente necessitatibus, expedita est ex.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a porro alias animi. Hic sapiente, minus sequi sed, quibusdam voluptate, eveniet molestiae ducimus dolore numquam natus explicabo! Non, mollitia quas.
       </p>
     </div>
 
-    <div class="card-content d-flex justify-content-around w-100 mt-2 container">
+    <div id="homing" class=" bg-light text-center container mt-3 pb-5">
+      <h2 class="display-4">Cardapios:</h2>
+    </div>
+
+    <div class="card-content d-flex justify-content-around w-100 container bg-light">
       <div class="card-deck w-100">
-     <div class="card text-center  bg-dark text-white ">
-         <img class="card-img-top" src="./images/card-one.jpg" alt="">
+     <div class="card text-center  bg-light text-dark border-0">
+         <img class="card-img-top rounded-circle pb-3" src="./images/card-one.jpg" alt="">
        <div class="card-header">
-         <h4 class="card-title">Comida japonesa</h4>
+         <h4 class="card-title">Café da Manhã</h4>
        </div>
        <div class="body">
-         <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+         <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
        </div>
-       <div class="footer m-4">
-         <button class="btn btn-danger">Fazer pedido</button>
+       <div class="card-footer">
+         <button class="btn btn-danger" data-toggle="modal" data-target="#meuModal">Ver cardápio</button>
        </div>
      </div>
 
-     <div class="card text-center  bg-warning text-dark ">
-       <img class="card-img-top" src="./images/card-two.jpg" alt="">
+     <div class="modal fade bd-example-modal-lg " id="meuModal" >
+       <div class="modal modal-dialog modal-lg modal-dialog-centered ">
+         <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h3 >Café da Manhã</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <table class="table  table-striped table-border">
+            <thead class="text-center">
+              <tr>
+                <th>Item</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Carrinho</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              <tr>
+                <td>Torrada de queijo</td>
+                <td>Pão integral, Manteiga, Queijo Mussarela</td>
+                <td>15R$</td>
+                <td><button class="btn btn-danger">Adicionar</button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+        </div>
+        <div class="modal-footer">
+        </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="card text-center  bg-dark text-light border-0">
+       <img class="card-img-top rounded-circle pb-3" src="./images/card-two.jpg" alt="">
      <div class="card-header">
        <h4 class="card-title">Comida japonesa</h4>
      </div>
      <div class="body">
-       <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+       <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
      </div>
-     <div class="footer m-4">
-       <button class="btn btn-dark">Fazer pedido</button>
+     <div class="card-footer">
+       <button class="btn btn-danger">Ver cardápio</button>
      </div>
    </div>
 
-   <div class="card text-center bg-dark text-white">
-         <img class="card-img-top" src="./images/card-three.jpg" alt="">
+   
+   <div class="card text-center bg-light text-dark border-0">
+         <img class="card-img-top rounded-circle pb-3" src="./images/card-three.jpg" alt="">
        <div class="card-header">
          <h4 class="card-title">Comida japonesa</h4>
        </div>
        <div class="body">
-         <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+         <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
        </div>
-       <div class="footer m-4">
-         <button class="btn btn-danger">Fazer pedido</button>
+       <div class="card-footer">
+         <button class="btn btn-danger">Ver cardápio</button>
        </div>
      </div>
    </div>
@@ -162,44 +256,44 @@
 
      
    </div>
-   <div class="card-content d-flex justify-content-around w-100 mt-3 container">
-     <div class="card-deck w-100">
-    <div class="card text-center bg-warning text-dark ">
-        <img class="card-img-top" src="./images/card-four.jpg" alt="">
+   <div class="card-content d-flex justify-content-around w-100  container bg-light pt-3">
+     <div class="card-deck w-100 p-3">
+    <div class="card text-center bg-dark text-light border-0">
+        <img class="card-img-top rounded-circle pb-3" src="./images/card-four.jpg" alt="">
       <div class="card-header">
         <h4 class="card-title">Comida japonesa</h4>
       </div>
       <div class="body">
-        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+        <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
       </div>
-      <div class="footer m-4">
-        <button class="btn btn-dark">Fazer pedido</button>
+      <div class="card-footer">
+        <button class="btn btn-danger">Ver cardápio</button>
       </div>
     </div>
 
-    <div class="card text-center bg-dark text-white ">
-      <img class="card-img-top" src="./images/card-five.jpg" alt="">
+    <div class="card text-center bg-light text-dark border-0">
+      <img class="card-img-top rounded-circle pb-3" src="./images/card-five.jpg" alt="">
     <div class="card-header">
       <h4 class="card-title">Comida japonesa</h4>
     </div>
     <div class="body">
-      <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+      <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
     </div>
-    <div class="footer m-4">
-      <button class="btn btn-danger">Fazer pedido</button>
+    <div class="card-footer">
+      <button class="btn btn-danger">Ver cardápio</button>
     </div>
   </div>
 
-  <div class="card text-center bg-warning text-dark ">
-        <img class="card-img-top" src="./images/card-six.jpg" alt="">
-      <div class="card-header">
+  <div class="card text-center bg-dark text-light border-0">
+        <img class="card-img- rounded-circle pb-3" src="./images/card-six.jpg" alt="">
+      <div class="card-header ">
         <h4 class="card-title">Comida japonesa</h4>
       </div>
       <div class="body">
-        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
+        <div class="card-text text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam molestiae, nam, magnam tenetur ullam non doloribus iste reiciendis asperiores dolore enim vel possimus earum! Fuga modi provident aliquid quam.</div>
       </div>
-      <div class="footer m-4">
-        <button class="btn btn-dark">Fazer pedido</button>
+      <div class="card-footer">
+        <button class="btn btn-danger">Ver cardápio</button>
       </div>
     </div>
   </div>
@@ -215,7 +309,6 @@
 
 </main>
 
-</div>
 
 
 
