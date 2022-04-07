@@ -5,7 +5,7 @@
 ## Leading page ( Bootstrap )
 This leading page is being developed to practice the bootstrap technology, it consists of a restaurant, in which you can access the menu and make your order, making a continuous improvement for the representatives of the same, it also contains an about section, and in the future new sections will be developed.
 
-## Technology 
+## Technology ---
 
 Here are the technologies used in this project.
 
